@@ -1,0 +1,67 @@
+[package]
+name = "ferris-web"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "Leptos SSR dashboard for the Rust ecosystem."
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+ferris-core.workspace = true
+leptos = { workspace = true }
+leptos_router.workspace = true
+leptos_meta.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+chrono.workspace = true
+
+# Server-side only: database access, scoring, HTTP stack.
+axum = { workspace = true, optional = true }
+tokio = { workspace = true, optional = true }
+leptos_axum = { workspace = true, optional = true }
+ferris-database = { workspace = true, optional = true }
+ferris-scoring = { workspace = true, optional = true }
+tracing = { workspace = true, optional = true }
+tracing-subscriber = { workspace = true, optional = true }
+
+# Hydration only: WASM tooling.
+console_error_panic_hook = { workspace = true, optional = true }
+wasm-bindgen = { workspace = true, optional = true }
+
+[features]
+hydrate = [
+    "leptos/hydrate",
+    "dep:console_error_panic_hook",
+    "dep:wasm-bindgen",
+]
+ssr = [
+    "dep:axum",
+    "dep:tokio",
+    "dep:leptos_axum",
+    "dep:ferris-database",
+    "dep:ferris-scoring",
+    "dep:tracing",
+    "dep:tracing-subscriber",
+    "leptos/ssr",
+    "leptos_meta/ssr",
+    "leptos_router/ssr",
+]
+
+[package.metadata.leptos]
+output-name = "ferris-web"
+site-root = "target/site"
+site-pkg-dir = "pkg"
+style-file = "style/main.css"
+assets-dir = "public"
+site-addr = "127.0.0.1:3000"
+reload-port = 3001
+browserquery = "defaults"
+env = "DEV"
+bin-features = ["ssr"]
+bin-default-features = false
+lib-features = ["hydrate"]
+lib-default-features = false
+lib-profile-release = "wasm-release"

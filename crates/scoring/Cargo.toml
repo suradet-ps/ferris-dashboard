@@ -1,0 +1,12 @@
+[package]
+name = "ferris-scoring"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "Momentum engine with explainable score breakdowns."
+
+[dependencies]
+ferris-core.workspace = true
+chrono.workspace = true
+thiserror.workspace = true

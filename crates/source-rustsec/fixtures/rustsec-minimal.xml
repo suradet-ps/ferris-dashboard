@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>RustSec Advisories</title>
+    <link>https://rustsec.org/advisories/</link>
+    <item>
+      <title>Unrelated item</title>
+      <link>https://rustsec.org/some/other/page.html</link>
+      <guid isPermaLink="false">https://rustsec.org/some/other/page.html</guid>
+    </item>
+  </channel>
+</rss>

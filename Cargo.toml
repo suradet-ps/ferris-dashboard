@@ -1,0 +1,69 @@
+[workspace]
+members = [
+    "apps/web",
+    "apps/worker",
+    "crates/core",
+    "crates/ingest",
+    "crates/database",
+    "crates/scoring",
+    "crates/source-github",
+    "crates/source-crates",
+    "crates/source-rss",
+    "crates/source-rustsec",
+    "crates/source-rfc",
+]
+
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+rust-version = "1.85"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", features = ["serde"] }
+url = "2"
+# `js` supplies randomness for `v4` ids on wasm32 (and is inert on native).
+uuid = { version = "1", features = ["serde", "v4", "js"] }
+thiserror = "2"
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+async-trait = "0.1"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time", "signal"] }
+reqwest = { version = "0.12", features = ["json", "rustls-tls"] }
+feed-rs = "2.4"
+futures = "0.3"
+rand = "0.8"
+axum = "0.8"
+leptos = "0.8.20"
+leptos_router = "0.8.15"
+leptos_meta = "0.8.6"
+leptos_axum = "0.8.10"
+wasm-bindgen = "0.2"
+console_error_panic_hook = "0.1"
+sqlx = { version = "0.9", default-features = false, features = ["runtime-tokio", "postgres", "macros", "migrate", "json", "chrono", "uuid"] }
+
+ferris-core = { path = "crates/core" }
+ferris-scoring = { path = "crates/scoring" }
+ferris-database = { path = "crates/database" }
+ferris-ingest = { path = "crates/ingest" }
+ferris-source-github = { path = "crates/source-github" }
+ferris-source-crates = { path = "crates/source-crates" }
+ferris-source-rss = { path = "crates/source-rss" }
+ferris-source-rustsec = { path = "crates/source-rustsec" }
+ferris-source-rfc = { path = "crates/source-rfc" }
+
+[profile.release]
+lto = "thin"
+
+# Size-optimized profile for the web app's WASM bundle in release mode.
+[profile.wasm-release]
+inherits = "release"
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>This Week in Rust</title>
+    <link>https://this-week-in-rust.org/</link>
+    <description>News and articles about the Rust programming language</description>
+    <item>
+      <title>This Week in Rust 598</title>
+      <link>https://this-week-in-rust.org/blog/2026/08/13/this-week-in-rust-598/</link>
+      <guid isPermaLink="false">https://this-week-in-rust.org/blog/2026/08/13/this-week-in-rust-598/</guid>
+      <pubDate>Thu, 13 Aug 2026 12:00:00 +0000</pubDate>
+      <description>Highlights and insights from the Rust community.</description>
+    </item>
+  </channel>
+</rss>

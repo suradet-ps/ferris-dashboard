@@ -1,0 +1,25 @@
+[package]
+name = "ferris-worker"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "Ingestion worker: schedules and runs source connectors."
+
+[[bin]]
+name = "ferris-worker"
+path = "src/main.rs"
+
+[dependencies]
+ferris-core.workspace = true
+ferris-ingest.workspace = true
+ferris-database.workspace = true
+ferris-source-github.workspace = true
+ferris-source-crates.workspace = true
+ferris-source-rss.workspace = true
+ferris-source-rustsec.workspace = true
+ferris-source-rfc.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+tokio.workspace = true

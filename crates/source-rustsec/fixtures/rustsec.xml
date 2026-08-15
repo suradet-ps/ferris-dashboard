@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>RustSec Advisories</title>
+    <link>https://rustsec.org/advisories/</link>
+    <description>Security advisories for crates.io</description>
+    <item>
+      <title>Integer overflow in hyper</title>
+      <link>https://rustsec.org/advisories/RUSTSEC-2026-0042.html</link>
+      <guid isPermaLink="false">https://rustsec.org/advisories/RUSTSEC-2026-0042.html</guid>
+      <pubDate>Wed, 13 Aug 2026 08:00:00 +0000</pubDate>
+      <description>An integer overflow may lead to a denial of service in hyper 1.x.</description>
+    </item>
+  </channel>
+</rss>

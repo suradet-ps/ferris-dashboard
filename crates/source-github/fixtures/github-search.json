@@ -1,0 +1,32 @@
+{
+  "total_count": 123456,
+  "incomplete_results": false,
+  "items": [
+    {
+      "id": 48860910,
+      "full_name": "tokio-rs/tokio",
+      "name": "tokio",
+      "description": "A runtime for writing reliable asynchronous applications with Rust.",
+      "html_url": "https://github.com/tokio-rs/tokio",
+      "stargazers_count": 30000,
+      "forks_count": 2700,
+      "open_issues_count": 120,
+      "language": "Rust",
+      "archived": false,
+      "pushed_at": "2026-08-14T09:30:00Z"
+    },
+    {
+      "id": 48860911,
+      "full_name": "rust-lang/rust",
+      "name": "rust",
+      "description": "Empowering everyone to build reliable and efficient software.",
+      "html_url": "https://github.com/rust-lang/rust",
+      "stargazers_count": 102000,
+      "forks_count": 13000,
+      "open_issues_count": 8000,
+      "language": "Rust",
+      "archived": false,
+      "pushed_at": "2026-08-15T02:00:00Z"
+    }
+  ]
+}

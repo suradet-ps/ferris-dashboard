@@ -1,0 +1,16 @@
+[package]
+name = "ferris-source-rss"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "RSS/Atom connector (Rust Blog, This Week in Rust)."
+
+[dependencies]
+ferris-core.workspace = true
+ferris-ingest.workspace = true
+async-trait.workspace = true
+feed-rs.workspace = true
+thiserror.workspace = true
+chrono.workspace = true
+url.workspace = true

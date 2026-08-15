@@ -1,0 +1,19 @@
+[package]
+name = "ferris-tests"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+description = "Workspace-level integration tests (no live network or database)."
+
+[dependencies]
+ferris-core.workspace = true
+ferris-scoring.workspace = true
+ferris-source-rss.workspace = true
+ferris-source-github.workspace = true
+ferris-source-crates.workspace = true
+ferris-source-rustsec.workspace = true
+ferris-source-rfc.workspace = true
+chrono.workspace = true
+serde_json.workspace = true

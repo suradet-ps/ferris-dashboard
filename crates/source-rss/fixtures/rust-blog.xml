@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Rust Blog</title>
+    <link>https://blog.rust-lang.org/</link>
+    <description>Official Rust blog</description>
+    <item>
+      <title>Announcing Rust 1.98</title>
+      <link>https://blog.rust-lang.org/2026/08/12/Rust-1.98.0.html</link>
+      <guid isPermaLink="false">https://blog.rust-lang.org/2026/08/12/Rust-1.98.0.html</guid>
+      <pubDate>Wed, 12 Aug 2026 16:00:00 +0000</pubDate>
+      <description>The Rust team is happy to announce a new version of Rust.</description>
+    </item>
+    <item>
+      <title>Rust 2024 Edition Update</title>
+      <link>https://blog.rust-lang.org/2026/07/20/edition-2024-update.html</link>
+      <guid isPermaLink="false">https://blog.rust-lang.org/2026/07/20/edition-2024-update.html</guid>
+      <pubDate>Mon, 20 Jul 2026 14:00:00 +0000</pubDate>
+      <description>Details on the next edition.</description>
+    </item>
+  </channel>
+</rss>

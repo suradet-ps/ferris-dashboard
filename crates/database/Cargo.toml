@@ -1,0 +1,17 @@
+[package]
+name = "ferris-database"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "SQLx repository layer over PostgreSQL."
+
+[dependencies]
+ferris-core.workspace = true
+sqlx.workspace = true
+chrono.workspace = true
+uuid.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+async-trait.workspace = true
+tracing.workspace = true
