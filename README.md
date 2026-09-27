@@ -1,13 +1,11 @@
 # Ferris Dashboard
 
-```
-███████╗███████╗██████╗ ██████╗ ██╗ ██████╗
-██╔════╝██╔════╝██╔══██╗██╔══██╗██║██╔════╝
-█████╗  █████╗  ██████╔╝██████╔╝██║███████╗
-██╔══╝  ██╔══╝  ██╔══██╗██╔══██╗██║╚════██║
-██║     ███████╗██║  ██║██║  ██║██║██████╔╝
-╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═════╝
-```
+[![License: MIT OR Apache-2.0](https://img.shields.io/badge/License-MIT%20OR%20Apache--2.0-blue.svg)](LICENSE-MIT)
+[![Rust: stable](https://img.shields.io/badge/rust-stable-orange.svg?logo=rust&logoColor=white)](https://www.rust-lang.org/)
+[![Leptos v0.8](https://img.shields.io/badge/Leptos-v0.8-blue.svg)](https://leptos.dev)
+[![Axum v0.8](https://img.shields.io/badge/Axum-v0.8-blue.svg)](https://github.com/tokio-rs/axum)
+[![PostgreSQL 14+](https://img.shields.io/badge/PostgreSQL-14%2B-4169E1.svg?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/suradet-ps/ferris-dashboard/issues)
 
 ---
 
@@ -137,4 +135,5 @@ workspace is being forged from the scaffold up.
   ─────────────────────────────────────────
 ```
 
-Open source.
+Licensed under [MIT](LICENSE-MIT) or [Apache-2.0](LICENSE-APACHE), at your
+option.
